@@ -489,7 +489,7 @@ We add 4 byte for one u32 length field. */
    problems with complex programs). You need to recompile the target binary
    after changing this - otherwise, SEGVs may ensue. */
 
-#define MAP_SIZE_POW2 16
+#define MAP_SIZE_POW2 18
 
 /* Do not change this unless you really know what you are doing. */
 
