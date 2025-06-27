@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="small_archive">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/AFLplusplus/testcases/archives/common/zip/small_archive.zip!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
