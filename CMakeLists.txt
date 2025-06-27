@@ -103,8 +103,7 @@ foreach(dbms IN LISTS DBMS)
 endforeach()
 
 if(MYSQL OR POSTGRESQL)
-  add_executable(db_driver srcs/db_driver.cc
-          srcs/db_driver.cc)
+  add_executable(db_driver srcs/db_driver.cc)
   target_link_libraries(db_driver ${YAML_CPP_LIBRARIES} all_client
                         absl::strings absl::str_format)
 
