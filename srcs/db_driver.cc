@@ -49,7 +49,7 @@ static void __afl_map_shm(void) {
 
   /* NOTE TODO BUG FIXME: if you want to supply a variable sized map then
      uncomment the following: */
-
+  setenv("AFL_MAP_SIZE", "262144", 1);
   if ((ptr = getenv("AFL_MAP_SIZE")) != NULL) {
     u32 val = atoi(ptr);
     if (val > 0) __afl_map_size = val;
@@ -172,7 +172,7 @@ int main(int argc, char *argv[]) {
   std::string db_name = config["db"].as<std::string>();
   std::string startup_cmd = config["startup_cmd"].as<std::string>();
   client::DBClient *database = client::create_client(db_name, config);
-  database->initialize(config);
+  database->initialize(config);   // initialize the database client.
 
   /* This is were the testcase data is written into */
   constexpr size_t kMaxInputSize = 0x100000;

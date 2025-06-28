@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="BackendCodeEditorMiscSettings">
-    <option name="/Default/Environment/Hierarchy/GeneratedFilesCacheKey/Timestamp/@EntryValue" value="4" type="long" />
+    <option name="/Default/Environment/Hierarchy/GeneratedFilesCacheKey/Timestamp/@EntryValue" value="6" type="long" />
     <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
   </component>
   <component name="CMakePresetLoader">{
@@ -27,13 +27,15 @@
   <component name="ChangeListManager">
     <list default="true" id="1fb48568-d123-4b78-a14c-666096df8c44" name="更改" comment="修改位图为256kb">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AFLplusplus/include/config.h" beforeDir="false" afterPath="$PROJECT_DIR$/AFLplusplus/include/config.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/dockers/mysql/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/dockers/mysql/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/srcs/db_driver.cc" beforeDir="false" afterPath="$PROJECT_DIR$/srcs/db_driver.cc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -45,12 +47,16 @@
     &quot;assignee&quot;: &quot;Tzx-cloud&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:Tzx-cloud/Squirrel.git",
-    "accountId": "75c8c2bf-51bc-46b7-abf5-3d2039cb07f0"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:Tzx-cloud/Squirrel.git&quot;,
+    &quot;accountId&quot;: &quot;75c8c2bf-51bc-46b7-abf5-3d2039cb07f0&quot;
   }
-}]]></component>
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/srcs/db_factory.cc" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/srcs/internal/mysql/mysql.cc" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectApplicationVersion">
     <option name="ide" value="CLion" />
     <option name="majorVersion" value="2025" />
@@ -68,6 +74,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "C/C++ 文件.afl-fuzz.c.executor": "Run",
+    "C/C++ 文件.db_driver.cc.executor": "Run",
+    "CMake 调试.Squirrel.executor": "Debug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.RadMigrateCodeStyle": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -98,22 +107,26 @@
       <window_info id="Commit_Guest" show_stripe_button="false" />
       <window_info id="Pull Requests" />
       <window_info id="Learn" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.22338867" />
-      <window_info active="true" id="Commit" order="1" visible="true" weight="0.22330448" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16088867" />
+      <window_info id="Commit" order="1" weight="0.22330448" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="Python Packages" />
       <window_info anchor="bottom" id="TODO" />
       <window_info anchor="bottom" id="File Transfer" />
+      <window_info anchor="bottom" id="Run" />
       <window_info anchor="bottom" id="Vcpkg" />
+      <window_info anchor="bottom" id="Find" />
       <window_info anchor="bottom" id="clangd" />
-      <window_info anchor="bottom" id="Version Control" order="0" weight="0.33016306" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.18161231" />
       <window_info anchor="bottom" id="Problems" order="1" />
       <window_info anchor="bottom" id="Problems View" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="3" weight="0.33016306" />
-      <window_info anchor="bottom" id="Services" order="4" />
-      <window_info active="true" anchor="bottom" id="CMake" order="5" visible="true" weight="0.32980865" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.4895833" />
+      <window_info anchor="bottom" id="Services" order="4" weight="0.32980865" />
+      <window_info anchor="bottom" id="CMake" order="5" weight="0.2894022" />
+      <window_info anchor="bottom" id="Build" order="6" weight="0.33016306" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.2894022" />
       <window_info anchor="right" id="make" side_tool="true" />
       <window_info anchor="right" id="Python Console" />
       <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
@@ -122,9 +135,38 @@
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
       <window_info anchor="right" id="Maven" order="4" weight="0.25" />
       <window_info anchor="right" id="Meson" order="5" />
-      <window_info anchor="right" id="Trae AI" order="6" />
+      <window_info active="true" anchor="right" id="Trae AI" order="6" visible="true" weight="0.28393555" />
       <window_info anchor="right" id="Coverage" order="7" side_tool="true" weight="0.32983398" />
     </layout>
+  </component>
+  <component name="RunManager" selected="CMake 调试.Squirrel">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Squirrel" type="CMakeListConfigurationType" factoryName="CMakeListConfigurationFactory" temporary="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="afl-fuzz.c" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Squirrel" TARGET_NAME="afl-fuzz.c" CONFIG_NAME="afl-fuzz.c">
+      <option name="sourceFile" value="AFLplusplus/src/afl-fuzz.c" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="db_driver.cc" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Squirrel" TARGET_NAME="db_driver.cc" CONFIG_NAME="db_driver.cc">
+      <option name="sourceFile" value="srcs/db_driver.cc" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="CMake 调试.Squirrel" />
+        <item itemvalue="C/C++ 文件.afl-fuzz.c" />
+        <item itemvalue="C/C++ 文件.db_driver.cc" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
@@ -134,7 +176,8 @@
       <option name="presentableId" value="Default" />
       <updated>1751028609905</updated>
       <workItem from="1751028612176" duration="2070000" />
-      <workItem from="1751030713894" duration="40000" />
+      <workItem from="1751030713894" duration="3082000" />
+      <workItem from="1751090870790" duration="9292000" />
     </task>
     <task id="LOCAL-00001" summary="修改位图为256kb">
       <option name="closed" value="true" />
@@ -144,7 +187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751030064747</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="修改位图为256kb">
+      <option name="closed" value="true" />
+      <created>1751030766734</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1751030766734</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,12 +206,34 @@
     <isAutomaticFoundErrors value="true" />
     <isAutomaticReloadCMake value="true" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$/AFLplusplus" />
     </ignored-roots>
     <MESSAGE value="修改位图为256kb" />
     <option name="LAST_COMMIT_MESSAGE" value="修改位图为256kb" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/srcs/db_driver.cc</url>
+          <line>161</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
